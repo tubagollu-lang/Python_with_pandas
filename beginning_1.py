@@ -32,3 +32,10 @@ df.to_excel('liste.xlsx', index=False)
 # Burada 'read_excel' komutu devreye giriyor
 df = pd.read_excel('liste.xlsx')
 
+# Veri çok büyükse sadece başını gösterir
+print(df.head())  
+# Boş veri var mı, sayı mı yazı mı anlamak için
+print(df.info())  
+# Sadece belli bir sütunu almak
+data = df['Zaman']
+
